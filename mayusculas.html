@@ -1,0 +1,16 @@
+<H1 style="text-align:center;">Convertidor a Mayúsculas introduzca su texto:</H1>
+<p style="text-align:center">
+<input type="text" name="convertir" id="convertir">
+<script>
+    var cadena = ""
+    var cadenaMayus = ""
+    function AConvertir() {
+        cadena = document.getElementById("convertir").value;
+        cadenaMayus = cadena.toUpperCase();
+        document.getElementById("Mayus").innerHTML = cadenaMayus;
+    return true;  
+}
+</script>
+<button onclick="AConvertir()">Convertir</button>
+</p>
+<p id="Mayus" style="font-size:200px; padding-bottom: 10%; text-align:center;"></p>
